@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #353836;
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 120px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+header a{
+    text-decoration: none;
+}
+
+header{
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a{
+    color: white;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+    transform: 0.3s;
+}
+#partner
+#contact{
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#partner{
+    border: 1px solid #040b49;
+}
+
+#contact{
+    border: 1px solid  rgb(150, 135, 50);
+}
+
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0; 
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+
+section{
+    padding: 40px 15%;
+}
+.contact{
+    background: rgb(24, 24, 24);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-img img{
+    max-width: 100%;
+    height: auto;
+    width: 720px;
+    border-radius: 10px;
+}
+
+.contact-form h1{
+    font: sans-serif;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+span{
+    color:  rgb(150, 135, 50);
+}
+
+.contact-form p{
+    color: aquamarine;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form{
+    position: relative;
+}
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px; 
+}
+
+.contact-form form .btn{
+    display: inline-block;
+    background: rgb(150, 135, 50);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contact-form form .btn:hover{
+    border: 2px solid rgb(150, 135, 50);
+    background: transparent;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 60px;
+        margin-top: 60px;
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: 3s;
+    }
+}
+@media(max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header nav{
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    
+    .logo{
+        width: 105px;
+        margin-top: 60px;
+    } 
+ 
+    
+}
+     
+    
+  

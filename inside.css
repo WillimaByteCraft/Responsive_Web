@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url('#');
+    background-size: cover;
+    background-position: center;
+    background-color: #353836;
+    font-family: sans-serif;
+  
+}
+
+.logo{
+    width: 120px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+header a{
+    text-decoration: none;
+}
+
+header{
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a{
+    color: white;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+ul li:hover{
+    transform: scale(1.1);
+    transform: 0.3s;
+}
+
+#partner
+#contact{
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#partner{
+    border: 1px solid #040b49;
+}
+
+#contact{
+    border: 1px solid  rgb(150, 135, 50);
+}
+
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0; 
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(150, 135, 50);
+}
+
+.content h1{
+    font-family: sans-serif;
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+ 
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+    
+}
+.one{
+    font-size:35px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: lighter;
+    
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(150, 135, 50);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: rgb(150, 135, 50);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.8s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+} 
+
+
+@media screen and (max-width: 481px){
+    header nav{
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    
+    .logo{
+        width: 95px;
+        margin-top: 60px;
+    } 
+    .content{
+        margin-top: 75px;
+    }
+    .content h1{
+        font-size: 2.7rem;
+        
+    }
+
+    .content p{
+        
+        line-height: 1.5px;
+        font-size:  1.2rem;
+        
+      
+    }
+
+    .one{
+        font-size:0.8rem;
+        line-height: 2.5px;
+    }
+
+    button{
+        padding: 30px 0;
+        margin: 2px 0;
+        border: 1.6px solid rgb(150, 135, 50);
+        border-radius: 40px;
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        width: 240px;
+     
+    }
+    
+  
+}
+
+@media screen and (max-width: 768px){
+    header nav{
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    
+    .logo{
+        width: 105px;
+        margin-top: 60px;
+    } 
+    .content h1{
+        font-size: 3rem;
+        margin-top: 90px;
+    }
+    .content p{
+        
+        line-height: 2px;
+        font-size:  1.2rem;
+        margin-bottom: 2.5px;
+      }
+    
+}
+     
+
+
+    
+
+
+    
